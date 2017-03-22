@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+  body{
+    font-family: calibri;
+    background:#FAF0E6;
+    color:#CD5C5C;
+  }
+  </style>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<form id="frm1">
+		Nombre: <input type="text" name="name" id="name"><br>
+		Mail: <input type="text" name="email" id="email"><br>
+	</form>
+	<button onclick="myFunction()">Mostrar</button>
+
+	<p id="mostrarNombre"></p>
+	<p id="mostrarMail"></p>
+
+	<script>
+		function myFunction() {
+		var valorNombre = document.getElementById('name').value;
+		var valorCorreo = document.getElementById('email').value;
+		var nombre = document.getElementById('mostrarNombre');
+		var correo = document.getElementById('mostrarMail');
+		nombre.innerHTML = "el nombre agregado es: " + valorNombre + " ❤";
+		correo.innerHTML = "el correo electronico agregado es: " + valorCorreo;
+		}
+	</script>
+</body>
+</html>
